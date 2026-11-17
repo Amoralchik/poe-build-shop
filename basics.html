@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basics · BuildShop</title>
+  <meta name="description" content="Path of Exile basics: defences, items, currency, the campaign, maps and the atlas, explained simply with links to PoEDB.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <h1>Basics</h1>
+      <p class="lede">The things every player needs to know, in plain words. Every topic links to
+        <a data-ext="poedb">PoEDB</a>, the game database, for the exact numbers.</p>
+    </div>
+
+    <div class="guide">
+      <nav id="toc" aria-label="On this page"></nav>
+      <article class="guide-body">
+
+        <h2 id="build" data-short="Pick a build">Pick a build</h2>
+        <ul>
+          <li>Start with a <strong>build guide</strong> instead of inventing one. Look at what's popular and working on
+            <a data-ninja="builds">poe.ninja builds</a>; every character there has a Path of Building code.</li>
+          <li><a data-ext="pob">Path of Building</a> (PoB) is the free planner everyone uses. It shows your damage and defences
+            and lets you test items before buying them.</li>
+          <li>Paste a build's PoB code into <a href="cost.html">Build cost</a> to see what it costs before you commit.</li>
+          <li>League starters should work with cheap gear. If a build needs expensive uniques to function, play it later.</li>
+        </ul>
+
+        <h2 id="defence" data-short="Defences">Defences: don't skip these</h2>
+        <ul>
+          <li><strong>Resistances.</strong> Fire, cold and lightning cap at <strong>75%</strong>. Completing the campaign
+            lowers them, so keep them capped on gear. Chaos resistance matters more later.
+            <a data-poedb="Resistance">PoEDB: resistance</a></li>
+          <li><strong>Life or energy shield.</strong> Pick one main pool. Most builds want 4,000+ life for maps and much more
+            for bosses.</li>
+          <li><strong>Mitigation.</strong> Armour reduces hits, evasion avoids attacks, block stops hits, and spell suppression
+            reduces spell damage. Good builds stack more than one layer.</li>
+          <li><strong>Recovery.</strong> Life flasks, leech and regeneration keep you alive between hits.</li>
+          <li>Rule of thumb: if you die often, fix defences before adding damage.</li>
+        </ul>
+
+        <h2 id="items" data-short="Items">Items and rarity</h2>
+        <div class="card-grid">
+          <div class="card"><h3 class="name NORMAL">Normal</h3><p>No mods. Used as crafting bases.</p></div>
+          <div class="card"><h3 class="name MAGIC">Magic</h3><p>1 prefix and 1 suffix at most. Good for flasks and early levelling.</p></div>
+          <div class="card"><h3 class="name RARE">Rare</h3><p>Up to 3 prefixes and 3 suffixes. Most of your gear will be rares.</p></div>
+          <div class="card"><h3 class="name UNIQUE">Unique</h3><p>Fixed special mods. Some builds are built around one unique.</p></div>
+        </div>
+        <ul>
+          <li><strong>Item level</strong> decides the best mod tiers an item can roll. <strong>Required level</strong> is what you need to wear it.</li>
+          <li><strong>Sockets and links</strong> hold your skill gems. A skill gem plus linked support gems makes your main skill.
+            A 6-link body armour or 2-handed weapon is the classic endgame upgrade.</li>
+          <li><strong>Influence</strong> (Shaper, Elder, Conquerors) adds extra mod pools. <a data-poedb="Influenced item">PoEDB: influenced items</a></li>
+          <li><strong>Corrupted</strong> items can't be changed any more, except by a few special currencies.</li>
+        </ul>
+
+        <h2 id="currency" data-short="Currency">Currency</h2>
+        <p>There's no gold-style money. Orbs <em>are</em> the money, and each also does something to items (see
+          <a href="crafting.html#orbs">Crafting</a>).</p>
+        <ul>
+          <li><strong>Chaos Orb</strong> <span class="px" data-item="Chaos Orb"></span> is the everyday unit for prices.</li>
+          <li><strong>Divine Orb</strong> <span class="px" data-item="Divine Orb"></span> is the big unit; expensive things are priced in divines.</li>
+          <li><strong>Mirror of Kalandra</strong> <span class="px" data-item="Mirror of Kalandra"></span> is the rarest item in trade.</li>
+          <li>Check what anything is worth on the <a href="market.html">Market</a> page.</li>
+        </ul>
+
+        <h2 id="trade" data-short="Trading">Trading</h2>
+        <ul>
+          <li>Use the official <a href="https://www.pathofexile.com/trade" target="_blank" rel="noopener">trade site</a> to search
+            for items, then whisper the seller in game. BuildShop's Trade ↗ buttons open ready-made searches.</li>
+          <li>Swap currency without whispering using the in-game currency exchange.</li>
+          <li>Prices are in chaos or divine. Sort by price and skip listings that look far too cheap; they're often price-fixing bait.</li>
+          <li>Be polite, be quick, and say "ty" after a trade. It really does help.</li>
+        </ul>
+
+        <h2 id="campaign" data-short="Campaign">The campaign</h2>
+        <ul>
+          <li>The story has <strong>10 acts</strong>. Most of the game (maps, crafting, bosses) starts after Act 10.</li>
+          <li>Don't overgear while levelling. Keep resistances near the cap, use movement-speed boots, and keep flasks up to date.</li>
+          <li>Complete the <a data-poedb="Labyrinth">Labyrinth</a> trials to earn <strong>ascendancy points</strong>. There are four labs; do them as you level.</li>
+          <li>Pick a <a data-poedb="Pantheon">Pantheon</a> power after the relevant bosses; it's free defence.</li>
+        </ul>
+
+        <h2 id="atlas" data-short="Maps & atlas">Maps and the atlas</h2>
+        <ul>
+          <li>After the campaign you run <strong>maps</strong>: items that open endgame areas. Higher tier maps are harder and richer.</li>
+          <li>Completing maps fills your <strong>atlas</strong> and gives <a data-poedb="Atlas passive skill">atlas passive points</a>.
+            Spend them to boost the mechanics you want to farm (see <a href="farming.html">Farming</a>).</li>
+          <li>Beating the pinnacle bosses gives <a data-poedb="Voidstone">Voidstones</a>, which raise all your maps to the
+            highest tier. Getting all four is the usual endgame goal.</li>
+          <li>Your atlas can be adjusted at any time, so try a strategy and change it if the profit isn't there.</li>
+        </ul>
+
+        <h2 id="tools" data-short="Useful tools">Useful tools</h2>
+        <div class="card-grid">
+          <div class="card"><h3>Path of Building</h3><p>Plan builds, test items, check damage and defences.</p><div class="links"><a data-ext="pob">pathofbuilding.community</a></div></div>
+          <div class="card"><h3>poe.ninja</h3><p>Prices and what top players are playing.</p><div class="links"><a data-ninja="builds">Builds</a><a href="market.html">Prices here</a></div></div>
+          <div class="card"><h3>PoEDB</h3><p>Every item, mod, monster and mechanic in the game files.</p><div class="links"><a data-ext="poedb">poedb.tw</a></div></div>
+          <div class="card"><h3>Craft of Exile</h3><p>Crafting simulator with exact mod odds and costs.</p><div class="links"><a data-ext="craft">craftofexile.com</a></div></div>
+          <div class="card"><h3>Wealthy Exile</h3><p>Farming strategies with profit tracking, and a stash tracker.</p><div class="links"><a data-ext="wealthy">Strategies</a><a data-ext="wealthyStash">Stash tracker</a></div></div>
+          <div class="card"><h3>FilterBlade</h3><p>Loot filters that hide junk and highlight valuable drops.</p><div class="links"><a data-ext="filterblade">filterblade.xyz</a></div></div>
+        </div>
+
+        <footer class="foot muted small">
+          Written for BuildShop. Game data: <a data-ext="poedb">PoEDB</a>. Prices from poe.ninja. Not affiliated with Grinding Gear Games.
+        </footer>
+      </article>
+    </div>
+  </main>
+
+  <script type="module">import { initGuide } from './js/site.js'; initGuide();</script>
+</body>
+</html>

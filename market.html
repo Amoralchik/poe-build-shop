@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market · BuildShop</title>
+  <meta name="description" content="Live Path of Exile market prices from poe.ninja: currency, fragments, essences, oils, uniques, gems and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <h1>Market</h1>
+      <p class="lede">What things are worth right now, from <a href="https://poe.ninja" target="_blank" rel="noopener">poe.ninja</a>.
+        Click a name to read about it on PoEDB, or the arrow to see its price history on poe.ninja.</p>
+    </div>
+
+    <div class="market-bar">
+      <input id="q" type="search" placeholder="Search items…" aria-label="Search items" autocomplete="off">
+      <label class="muted small"><input type="checkbox" id="all-cats"> Search all categories</label>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div id="table" class="market-table"></div>
+
+    <footer class="foot muted small">
+      Prices are poe.ninja values for the chosen league, refreshed every few hours. Volume is how much trades per day, in chaos.
+      Items with little volume can have misleading prices. Not affiliated with Grinding Gear Games.
+    </footer>
+  </main>
+
+  <script type="module" src="js/market-page.js"></script>
+</body>
+</html>

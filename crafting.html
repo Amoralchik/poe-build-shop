@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crafting guide · BuildShop</title>
+  <meta name="description" content="Path of Exile crafting explained: what each orb does, the main crafting methods, and what it all costs right now.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <h1>Crafting</h1>
+      <p class="lede">How items get their mods, what each orb does, and the methods people use. Before spending real currency,
+        try your craft for free on <a data-ext="craft">Craft of Exile</a>: it shows every possible mod, its odds and the
+        average cost.</p>
+    </div>
+
+    <div class="guide">
+      <nav id="toc" aria-label="On this page"></nav>
+      <article class="guide-body">
+
+        <h2 id="how-mods-work" data-short="How mods work">How mods work</h2>
+        <ul>
+          <li>A rare item can have up to <strong>3 prefixes</strong> and <strong>3 suffixes</strong>. Life and flat damage are
+            usually prefixes; resistances and attributes are usually suffixes.</li>
+          <li>Each mod has <strong>tiers</strong>. Higher tiers need a higher <strong>item level</strong>, so the base you craft on matters.</li>
+          <li>Each mod has a <strong>weight</strong>: how likely it is to roll. Rare, strong mods have low weights. That's why
+            some crafts take hundreds of tries.</li>
+          <li><strong>Influenced</strong> bases (Shaper, Elder, Conquerors) and <strong>Eldritch</strong> implicits unlock extra mods.</li>
+          <li>Mod pools differ per base type. PoEDB lists every mod and tier for each base, for example
+            <a data-poedb="Crafting Bench">the crafting bench</a> page.</li>
+        </ul>
+
+        <h2 id="orbs" data-short="What each orb does">What each orb does</h2>
+        <p>Live prices next to each orb are from poe.ninja for your league.</p>
+        <div class="card-grid">
+          <div class="card"><h3><a data-poedb="Orb of Transmutation">Transmutation</a> <span class="px" data-item="Orb of Transmutation"></span></h3><p>Normal → magic (1–2 mods).</p></div>
+          <div class="card"><h3><a data-poedb="Orb of Alteration">Alteration</a> <span class="px" data-item="Orb of Alteration"></span></h3><p>Rerolls a magic item. The classic way to fish for one specific mod.</p></div>
+          <div class="card"><h3><a data-poedb="Orb of Augmentation">Augmentation</a> <span class="px" data-item="Orb of Augmentation"></span></h3><p>Adds a mod to a magic item with one mod.</p></div>
+          <div class="card"><h3><a data-poedb="Regal Orb">Regal</a> <span class="px" data-item="Regal Orb"></span></h3><p>Magic → rare, keeping the mods and adding one.</p></div>
+          <div class="card"><h3><a data-poedb="Orb of Alchemy">Alchemy</a> <span class="px" data-item="Orb of Alchemy"></span></h3><p>Normal → rare with random mods.</p></div>
+          <div class="card"><h3><a data-poedb="Chaos Orb">Chaos</a> <span class="px" data-item="Chaos Orb"></span></h3><p>Rerolls all mods on a rare. Also the main trade currency.</p></div>
+          <div class="card"><h3><a data-poedb="Exalted Orb">Exalted</a> <span class="px" data-item="Exalted Orb"></span></h3><p>Adds one random mod to a rare.</p></div>
+          <div class="card"><h3><a data-poedb="Orb of Annulment">Annulment</a> <span class="px" data-item="Orb of Annulment"></span></h3><p>Removes one random mod. Risky unless the other mods are protected.</p></div>
+          <div class="card"><h3><a data-poedb="Divine Orb">Divine</a> <span class="px" data-item="Divine Orb"></span></h3><p>Rerolls the numbers of mods within their tiers. The main high-value currency.</p></div>
+          <div class="card"><h3><a data-poedb="Orb of Scouring">Scouring</a> <span class="px" data-item="Orb of Scouring"></span></h3><p>Removes all mods, back to normal.</p></div>
+          <div class="card"><h3><a data-poedb="Blessed Orb">Blessed</a> <span class="px" data-item="Blessed Orb"></span></h3><p>Rerolls the numbers of implicit mods.</p></div>
+          <div class="card"><h3><a data-poedb="Vaal Orb">Vaal</a> <span class="px" data-item="Vaal Orb"></span></h3><p>Corrupts an item: unpredictable result, and it can't be changed afterwards.</p></div>
+          <div class="card"><h3><a data-poedb="Orb of Fusing">Fusing</a> · <a data-poedb="Jewellers Orb">Jeweller's</a> · <a data-poedb="Chromatic Orb">Chromatic</a></h3>
+            <p>Reroll links, socket count and socket colours. <span class="px" data-item="Orb of Fusing"></span> <span class="px" data-item="Jeweller's Orb"></span> <span class="px" data-item="Chromatic Orb"></span></p></div>
+          <div class="card"><h3><a data-poedb="Fracturing Orb">Fracturing</a> <span class="px" data-item="Fracturing Orb"></span></h3><p>Locks one random mod permanently. Fractured bases are the starting point for many high-end crafts.</p></div>
+          <div class="card"><h3><a data-poedb="Mirror of Kalandra">Mirror of Kalandra</a> <span class="px" data-item="Mirror of Kalandra"></span></h3><p>Duplicates an item. The rarest currency, used to copy perfect items.</p></div>
+        </div>
+
+        <h2 id="bench" data-short="Crafting bench">The crafting bench</h2>
+        <p>The bench in your hideout adds a chosen mod for a fixed cost, as long as the item has a free prefix or suffix.</p>
+        <ul>
+          <li>Use it to <strong>fill the last open slot</strong> with resistance, life or damage. This is the cheapest upgrade in the game.</li>
+          <li><strong>"Prefixes/Suffixes Cannot Be Changed"</strong> protects one side when you use chaos-style rerolls.
+            <strong>"Can have up to 3 crafted modifiers"</strong> lets you add several bench mods (multimod).</li>
+          <li>You unlock recipes by finding them in the world; the list is on <a data-poedb="Crafting Bench">PoEDB</a>.</li>
+        </ul>
+
+        <h2 id="methods" data-short="Crafting methods">Crafting methods</h2>
+
+        <h3>Alteration spam (cheap, for one or two mods)</h3>
+        <p>Transmute a base, use Alterations until you hit the mod you want, Augment for a second one, then Regal into a rare and
+          finish with the bench. Great for flasks, jewels and early-league gear.</p>
+
+        <h3>Essence spam (guaranteed mod)</h3>
+        <p>Each essence <strong>guarantees one mod</strong> and rolls the rest at random. Keep using essences until the random mods
+          are good too. A good choice when the key mod is the one the essence gives.</p>
+        <div class="px-table" data-cat="Essence" data-limit="5"></div>
+
+        <h3>Fossils and resonators (steer the mod pool)</h3>
+        <p>Fossils add or block whole groups of mods, for example "more physical, no lightning". A resonator holds 1–4 fossils
+          and rerolls the item like a Chaos Orb but with those rules. Good for items where most mods share a tag.</p>
+        <div class="px-table" data-cat="Fossil" data-limit="5"></div>
+
+        <h3>Metacrafting (protect what you have)</h3>
+        <p>Bench-craft "Prefixes Cannot Be Changed", then reroll or annul the suffixes without touching the good prefixes.
+          It costs more per try but is how most top-end items are finished.</p>
+
+        <h3>Omens and special currency</h3>
+        <p>Some league currencies change how a normal orb behaves (for example, making an Exalted Orb add only a prefix).
+          They change from league to league; check the Market page for what's available.</p>
+        <div class="px-table" data-cat="Omen" data-limit="5"></div>
+
+        <h2 id="craft-or-buy" data-short="Craft or buy?">Craft or buy?</h2>
+        <ol>
+          <li>Open <a href="cost.html">Build cost</a> and paste your build. For the item you want, use <strong>Trade ↗</strong>
+            to see what it costs ready-made.</li>
+          <li>On <a data-ext="craft">Craft of Exile</a>, pick the same base and item level, choose your method and target mods,
+            and read the <strong>average cost</strong> it calculates.</li>
+          <li>If buying is cheaper, buy it. Crafting wins mostly for very specific mod combinations nobody sells.</li>
+        </ol>
+        <div class="callout">Craft of Exile's emulator lets you click orbs on a virtual item for free. Practise a method there
+          before trying it with real currency.</div>
+
+        <footer class="foot muted small">
+          Written for BuildShop. Mod data and odds: <a data-ext="craft">Craft of Exile</a> and <a data-ext="poedb">PoEDB</a>.
+          Prices from poe.ninja. Not affiliated with Grinding Gear Games.
+        </footer>
+      </article>
+    </div>
+  </main>
+
+  <script type="module">import { initGuide } from './js/site.js'; initGuide();</script>
+</body>
+</html>

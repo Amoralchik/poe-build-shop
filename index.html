@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuildShop · Path of Exile toolkit</title>
+  <meta name="description" content="Path of Exile in one place: build costs, live market prices, and farming, crafting and beginner guides.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Everything for your <span>next build</span></h1>
+      <p class="lede">What a build costs, what your loot is worth, how to farm and how to craft, all in one place, with links to
+        the tools the community uses.</p>
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Search guides and items: “delirium”, “divine orb”, “resistances”…" autocomplete="off" aria-label="Search guides and items" aria-controls="results">
+        <div id="results" class="search-results" hidden></div>
+      </div>
+    </section>
+
+    <div class="card-grid">
+      <a class="card tool-card" href="cost.html"><span class="kicker">Tool</span><h3>Build cost</h3>
+        <p>Paste a Path of Building code. Get the total price, and a trade search for every item.</p></a>
+      <a class="card tool-card" href="market.html"><span class="kicker">Live prices</span><h3>Market</h3>
+        <p>Currency, fragments, essences, oils, uniques, gems and more, from poe.ninja.</p></a>
+      <a class="card tool-card" href="farming.html"><span class="kicker">Guide</span><h3>Farming</h3>
+        <p>Every major mechanic: what it drops, how hard it is, and what the loot is worth today.</p></a>
+      <a class="card tool-card" href="crafting.html"><span class="kicker">Guide</span><h3>Crafting</h3>
+        <p>What each orb does, the main methods, and how to decide between crafting and buying.</p></a>
+      <a class="card tool-card" href="basics.html"><span class="kicker">Guide</span><h3>Basics</h3>
+        <p>Defences, items, currency, trading and the atlas, for new and returning players.</p></a>
+      <a class="card tool-card" data-ninja="builds"><span class="kicker">poe.ninja ↗</span><h3>Find a build</h3>
+        <p>See what top players run, then copy a character's PoB code into Build cost.</p></a>
+    </div>
+
+    <h2 class="section-title">Market pulse <a href="market.html">Full market →</a></h2>
+    <div class="pulse" id="pulse">
+      <div class="card"><h3>Key prices</h3><div class="px-table" data-items="Divine Orb|Mirror of Kalandra|Exalted Orb|Orb of Annulment|Fracturing Orb|Orb of Alchemy"></div></div>
+      <div class="card"><h3>Rising this week</h3><div id="risers"></div></div>
+      <div class="card"><h3>Falling this week</h3><div id="fallers"></div></div>
+    </div>
+
+    <h2 class="section-title">Community tools</h2>
+    <div class="card-grid">
+      <div class="card"><h3>poe.ninja</h3><p>Prices and build statistics. Powers this site's numbers.</p><div class="links"><a href="https://poe.ninja" target="_blank" rel="noopener">poe.ninja ↗</a></div></div>
+      <div class="card"><h3>Wealthy Exile</h3><p>Farming strategies with tracked profit per hour.</p><div class="links"><a data-ext="wealthy">Strategies ↗</a></div></div>
+      <div class="card"><h3>PoEDB</h3><p>The game database: every item, mod and mechanic.</p><div class="links"><a data-ext="poedb">poedb.tw ↗</a></div></div>
+      <div class="card"><h3>Craft of Exile</h3><p>Crafting simulator with exact odds and costs.</p><div class="links"><a data-ext="craft">craftofexile.com ↗</a></div></div>
+    </div>
+
+    <footer class="foot muted small">
+      BuildShop is a fan-made tool. Prices from poe.ninja, refreshed every few hours. Not affiliated with Grinding Gear Games,
+      poe.ninja, Wealthy Exile, PoEDB or Craft of Exile.
+    </footer>
+  </main>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

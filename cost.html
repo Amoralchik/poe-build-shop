@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build cost · BuildShop</title>
+  <meta name="description" content="Paste a Path of Building code and see what the build costs on the Path of Exile market, with one-click trade searches.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <h1>Build cost</h1>
+      <p class="lede">Paste a Path of Building code to see what the build costs right now. Need a build? Find one on
+        <a data-ninja="builds">poe.ninja builds</a>, open a character and copy its <em>Path of Building import code</em>.</p>
+    </div>
+
+    <section class="inputs">
+      <div class="input-card">
+        <label for="target">Target build <span class="muted">— the build you want</span></label>
+        <textarea id="target" spellcheck="false" placeholder="Paste a Path of Building code (Import/Export Build → Generate → Copy)"></textarea>
+        <label class="loadout" hidden>Loadout <select id="target-loadout"></select></label>
+      </div>
+      <div class="input-card">
+        <label for="current">Your current build <span class="muted">— optional; what you already own is skipped</span></label>
+        <textarea id="current" spellcheck="false" placeholder="Optional: paste your own PoB code"></textarea>
+        <label class="loadout" hidden>Loadout <select id="current-loadout"></select></label>
+      </div>
+      <div class="actions">
+        <button id="go" class="btn primary">Price this build</button>
+        <span id="status" class="muted" role="status"></span>
+      </div>
+    </section>
+
+    <section id="results" hidden>
+      <div class="summary" id="summary"></div>
+      <div class="options" id="options">
+        <label><input type="checkbox" id="opt-pseudo" checked> Combine life, resistances and attributes into totals</label>
+        <label>Search for mods at
+          <select id="opt-tol">
+            <option value="1">100%</option>
+            <option value="0.9" selected>90%</option>
+            <option value="0.8">80%</option>
+            <option value="0.7">70%</option>
+          </select>
+          of the target value
+        </label>
+      </div>
+      <div id="list"></div>
+    </section>
+
+    <footer class="foot muted small">
+      Prices come from <a href="https://poe.ninja" target="_blank" rel="noopener">poe.ninja</a> (median listings, refreshed every few hours).
+      Rare items have no reliable automatic price, so use the trade search to check them.
+      Not affiliated with Grinding Gear Games.
+    </footer>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
