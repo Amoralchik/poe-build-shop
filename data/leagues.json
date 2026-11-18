@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-18T02:27:01.561Z",
+ "updated": "2026-11-18T13:02:34.722Z",
  "leagues": [
   {
    "name": "Covens",
    "file": "covens.json",
    "ninja": "covens",
-   "updated": "2026-11-18T02:26:19.823Z"
+   "updated": "2026-11-18T13:01:57.746Z"
   },
   {
    "name": "Hardcore Covens",
    "file": "hardcore-covens.json",
    "ninja": "covenshc",
-   "updated": "2026-11-18T02:26:28.680Z"
+   "updated": "2026-11-18T13:02:07.610Z"
   },
   {
    "name": "Standard",
    "file": "standard.json",
    "ninja": "standard",
-   "updated": "2026-11-18T02:26:39.180Z"
+   "updated": "2026-11-18T13:02:16.068Z"
   },
   {
    "name": "Hardcore",
    "file": "hardcore.json",
    "ninja": "hardcore",
-   "updated": "2026-11-18T02:26:48.917Z"
+   "updated": "2026-11-18T13:02:24.971Z"
   }
  ]
 }
